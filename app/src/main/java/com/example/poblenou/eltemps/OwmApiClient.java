@@ -45,6 +45,8 @@ public class OwmApiClient {
     }
 
     public void updateForecasts(final ArrayAdapter<String> adapter) {
+        
+
         Call<Forecast> forecastCall = service.dailyForecast(
                 CITY, "json", "metric", 14, APPID
         );
